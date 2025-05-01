@@ -1,11 +1,33 @@
-import React, { createContext } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
+import { jobListings } from '../assets/Assets';
 
 export const AppContext = createContext();
 
 export const AppConcextProvier =(props)=>{
 
-    const value ={
+    const [searchFilter,setSearchFilter] = useState(
+        {
+            title:'',
+            location:''
+        }
+    )
+    const [isSearched,setIsSearched] = useState(false)
+    const [jobs,setJobs] = useState([])
+    // function to fach jobs data 
+     const fetchJobs = async()=>{
+         setJobs(jobListings)
+     }
+     useEffect(()=>{
+        fetchJobs()
+     },[])
 
+    const value ={
+        searchFilter,
+        setSearchFilter,
+        isSearched,
+        setIsSearched,
+        jobs,
+        setJobs
     }
 
     return(
