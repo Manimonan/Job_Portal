@@ -16,7 +16,7 @@ function JobListing() {
   const [showMobileFilter, setShowMobileFilter] = React.useState(false);
   const [currentPage, setCurrentPage] = React.useState(1);
 
-  console.log(Math.ceil());
+ 
 
   return (
     <div className="container 2xl:px-20 mx-auto my-10 flex flex-col lg:flex-row gap-10">
@@ -124,7 +124,7 @@ function JobListing() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
                 {/* Map through job listings and display them */}
-                {jobs.map((job,index)=>(
+                {jobs.slice((currentPage-1)*6,currentPage*6).map((job,index)=>(
                    <JobCard key={index} job={job}/>
                 ))}    
             </div>
@@ -133,17 +133,24 @@ function JobListing() {
             {
                   jobs.length > 0 && (
                     <div className="flex items-center justify-center gap-4 mt-8 space-x-2 ">
-                     <a href="#job-list"><FaArrowLeft/></a>
+                     <a href="#job-list"><FaArrowLeft onClick={()=>setCurrentPage(Math.max(currentPage - 1),1)}/></a>
                       {
-                        Array.from({ lenght:Math.ceil(jobs.length/6)}).map((_,index)=>(
-                          <a href="#job_list">
-                            <button className="">
-                              {index + 1} 
-                            </button>
-                          </a>
+                        
+                        Array.from({ length: Math.ceil(jobs.length / 6) }, (_, i) => (
+                          <button
+                            key={i}
+                            onClick={() => setCurrentPage(i + 1)}
+                            className={`px-4 py-2 rounded-lg ${
+                              currentPage === i + 1
+                                ? "bg-blue-500 text-white"
+                                : "bg-gray-200 text-gray-700"
+                            }`}
+                          >
+                            {i + 1}
+                          </button>
                         ))
                       }
-                     <a href="#job-list"><FaArrowRight/></a>
+                     <a href="#job-list"><FaArrowRight onClick={()=>setCurrentPage(Math.min(currentPage + 1,Math.ceil(jobs.length / 6)))}/></a>
                     </div>
                   )
                  }

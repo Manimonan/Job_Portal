@@ -6,6 +6,8 @@ import google_logo from './google.png';
 import amazon_logo from './amazon_logo.png';
 import tataMotors_logo from './tataMotors.png';
 import comon_logo  from './logo.png'
+import pointing_art from './pointing_art.png';
+import men_pointing from './men_pointing.png'
 
 
 export const assets = {
@@ -16,7 +18,9 @@ export const assets = {
     google_logo,
     amazon_logo,
     tataMotors_logo,
-    comon_logo
+    comon_logo,
+    pointing_art,
+    men_pointing
 
 
 }
