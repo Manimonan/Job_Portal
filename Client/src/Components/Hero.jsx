@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { IoSearch } from "react-icons/io5";
 import { VscLocation } from "react-icons/vsc";
 import { assets } from "../assets/Assets";
-import { AppContext } from "../Context/AppContext";
+import { AppContext } from "../context/AppContext";
 
 function Hero() {
   const { setSearchFilter, setIsSearched } = useContext(AppContext);
@@ -25,7 +25,7 @@ function Hero() {
   };
 
   return (
-    <div className="container 2xl:px-20 mx-auto my-10">
+    <div className="container 2xl:px-20 mx-auto my-10 mt-20">
       <div className="bg-gradient-to-r from-blue-500 to-blue-800 text-white rounded-lg p-10 flex flex-col gap-4">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-4 text-center">
           Welcome to the Job Application Portal

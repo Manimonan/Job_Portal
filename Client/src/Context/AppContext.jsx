@@ -13,6 +13,7 @@ export const AppConcextProvier =(props)=>{
     )
     const [isSearched,setIsSearched] = useState(false)
     const [jobs,setJobs] = useState([])
+    const[showRecruitersLogin,setShowRecruitersLogin]=useState(false)
     // function to fach jobs data 
      const fetchJobs = async()=>{
          setJobs(jobListings)
@@ -27,7 +28,9 @@ export const AppConcextProvier =(props)=>{
         isSearched,
         setIsSearched,
         jobs,
-        setJobs
+        setJobs,
+        showRecruitersLogin,
+        setShowRecruitersLogin
     }
 
     return(

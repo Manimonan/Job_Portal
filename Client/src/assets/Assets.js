@@ -8,6 +8,9 @@ import tataMotors_logo from './tataMotors.png';
 import comon_logo  from './logo.png'
 import pointing_art from './pointing_art.png';
 import men_pointing from './men_pointing.png'
+import facebook from './facebook.png';
+import linkedin from './linkedin.png';
+import twitter from './twitter.png';
 
 
 export const assets = {
@@ -20,7 +23,10 @@ export const assets = {
     tataMotors_logo,
     comon_logo,
     pointing_art,
-    men_pointing
+    men_pointing,
+    facebook,
+    linkedin,
+    twitter,
 
 
 }
@@ -135,6 +141,63 @@ export const jobLocations = [
     },
 ]
 
+export const jobsApplied = [
+    {
+        id: 1,
+        title: "Software Engineer",
+        company: "Microsoft",
+        location: "Kolkata",
+        date: "2023-10-01",
+        status: "Applied",
+        logo: microsoft_logo
+    },
+    {
+        id: 2,
+        title: "Data Scientist",
+        company: "Samsung",
+        location: "Delhi",
+        date: "2023-10-02",
+        status: "Interview Scheduled",
+        logo: samsung_logo
+    },
+    {
+        id: 3,
+        title: "Product Manager",
+        company: "Accenture",
+        location: "Mumbai",
+        date: "2023-10-03",
+        status: "Offer Accepted",
+        logo: accenture_logo
+    },
+    {
+        id: 4,
+        title: "Marketing Manager",
+        company: "Walmart",
+        location: "Bangalore",
+        date: "2023-10-04",
+        status: "Rejected",
+        logo: walmart_logo
+    },
+    {
+        id: 5,
+        title: "Sales Executive",
+        company: "Google",
+        location: "Chennai",
+        date: "2023-10-05",
+        status: "Offer Accepted",
+        logo: google_logo
+    },
+    {
+        id: 6,
+        title: "Graphic Designer",
+        company: "Amazon",
+        location: "Hyderabad",
+        date: "2023-10-06",
+        status: "Applied",
+        logo: amazon_logo
+    },
+]
+
 export const jobListings = [
     {
         _id: 1,
@@ -170,7 +233,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 8,00,000 - ₹ 12,00,000",
+        salary: 800000,
         type: "Full-time",
         
 
@@ -210,7 +273,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 10,00,000 - ₹ 15,00,000",
+        salary: 1300000,
         type: "Full-time",
     },
     {
@@ -247,7 +310,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 12,00,000 - ₹ 18,00,000",
+        salary: 1200000,
         type: "Full-time",
     },
     {
@@ -284,7 +347,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 8,00,000 - ₹ 12,00,000",
+        salary: 1000000,
         type: "Full-time",
     },
     {
@@ -321,7 +384,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 5,00,000 - ₹ 8,00,000",
+        salary: 700000,
         type: "Full-time",
     },
     {
@@ -358,7 +421,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 6,00,000 - ₹ 10,00,000",
+        salary: 900000,
         type: "Full-time",
     },
     {
@@ -395,7 +458,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 8,00,000 - ₹ 12,00,000",
+        salary: 1100000,
         type: "Full-time",
     },
     {
@@ -432,7 +495,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 7,00,000 - ₹ 11,00,000",
+        salary: 1500000,
         type: "Full-time",
     },
     {
@@ -469,7 +532,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 3,00,000 - ₹ 5,00,000",
+        salary: 1500000,
         type: "Full-time",
     },
     {
@@ -506,7 +569,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 10,00,000 - ₹ 15,00,000",
+        salary: 1400000,
         type: "Full-time",
     },
     {
@@ -543,7 +606,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 9,00,000 - ₹ 14,00,000",
+        salary: 1200000,
         type: "Full-time",
     },
     {
@@ -580,7 +643,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 3,00,000 - ₹ 5,00,000",
+        salary: 1400000,
         type: "Full-time",
     },
     {
@@ -617,7 +680,7 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 7,00,000 - ₹ 11,00,000",
+        salary: 1100000,
         type: "Full-time",
     },
     {
@@ -650,7 +713,7 @@ export const jobListings = [
             <li>Excellent communication and analytical skills.</li>
         </ul>
         ` ,
-        salary: "₹ 8,00,000 - ₹ 12,00,000",
+        salary: 1100000,
         type: "Full-time",
     },
     {
@@ -687,7 +750,18 @@ export const jobListings = [
         </ul>
         
         ` ,
-        salary: "₹ 6,00,000 - ₹ 10,00,000",
+        salary: 1500000,
         type: "Full-time",
     },
 ] 
+
+// Custom class names
+
+    // .rich-text p { margin-bottom :16px;}
+    
+    // .rich-text h2 { font-size: 20px;font-weight: bold; color: #444; margin-top: 1.5em; margin-bottom: 0.5em;}
+    // .rice-text strong {font-weight:700}
+    
+    // .rice-text ul {margin-left: 30px; list-style-type: disc}
+    // .rice-text li {margin-bottom: 8px}
+   
