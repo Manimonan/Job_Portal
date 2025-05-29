@@ -11,6 +11,7 @@ import men_pointing from './men_pointing.png'
 import facebook from './facebook.png';
 import linkedin from './linkedin.png';
 import twitter from './twitter.png';
+import applicant from './aplicant.png';
 
 
 export const assets = {
@@ -27,6 +28,7 @@ export const assets = {
     facebook,
     linkedin,
     twitter,
+    applicant,
 
 
 }
@@ -138,6 +140,126 @@ export const jobLocations = [
         id: 6,
         name: "Hyderabad",
        
+    },
+]
+
+export const viewApplicationsPageData = [
+    {
+        id: 1,
+        name: "John Doe",
+        jobTitle: "Software Engineer",
+        company: "Microsoft",
+        location: "Kolkata",
+        resume: "https://example.com/resume/johndoe.pdf",
+        action: [
+             'Accept','Reject',
+        ],
+    },
+    {
+        id: 2,
+        name: "Jane Smith",
+        jobTitle: "Data Scientist",
+        company: "Samsung",
+        location: "Delhi",
+        resume: "https://example.com/resume/janesmith.pdf",
+        action: [
+             'Accept','Reject',
+        ],
+    },
+    {
+        id: 3,
+        name: "Alice Johnson",
+        jobTitle: "Product Manager",
+        company: "Accenture",
+        location: "Mumbai",
+        resume: "https://example.com/resume/alicejohnson.pdf",
+        action: [
+             'Accept','Reject',
+        ],
+    },
+    {
+        id: 4,
+        name: "Bob Brown",
+        jobTitle: "Marketing Manager",
+        company: "Walmart",
+        location: "Bangalore",
+        resume: "https://example.com/resume/bobbrown.pdf",
+        action: [
+             'Accept','Reject',
+        ],
+    },
+    {
+        id: 5,
+        name: "Charlie Davis",
+        jobTitle: "Sales Executive",
+        company: "Google",
+        location: "Chennai",
+        resume: "https://example.com/resume/charliedavis.pdf",
+        action: [
+             'Accept','Reject',
+        ],
+    },
+    {
+        id: 6,
+        name: "Eve Wilson",
+        jobTitle: "Graphic Designer",
+        company: "Amazon",
+        location: "Hyderabad",
+        resume: "https://example.com/resume/ewilson.pdf",
+         action:[
+            'Accept','Reject',
+         ]
+    }
+]
+
+export const manageJobsPageData = [
+    { 
+        id: 1,
+        jobTitle: "Software Engineer",
+        date: "2023-10-01",
+        location: "Kolkata",
+        applicants: 5,
+        visible: true,
+    },
+    {
+        id: 2,
+        jobTitle: "Data Scientist",
+        date: "2023-10-02",
+        location: "Delhi",
+        applicants: 3,
+        visible: true,
+    },
+    {
+        id: 3,
+        jobTitle: "Product Manager",
+        date: "2023-10-03",
+        location: "Mumbai",
+        applicants: 2,
+        visible: false,
+    },
+    {
+        id: 4,
+        jobTitle: "Marketing Manager",
+        date: "2023-10-04",
+        location: "Bangalore",
+        applicants: 4,
+        visible: true,
+    },
+    {
+        id: 5,
+        jobTitle: "Sales Executive",
+        date: "2023-10-05",
+        location: "Chennai",
+        applicants: 6,
+        visible: true,
+    },
+    {
+        id: 6,
+        jobTitle: "Graphic Designer",
+        date: "2023-10-06",
+        location: "Hyderabad",
+        applicants: 1,
+        visible: false,
     },
 ]
 

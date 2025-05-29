@@ -18,7 +18,7 @@ const Dashboard = () => {
                 <p className='max-sm:hidden'>Hii.. recruiter</p>
                 <div className='relative group'>
                    <FaUserTie className='text-3xl p-1 rounded-full border border-blue-400 cursor-pointer'/>
-                   <div className='hidden group-hover:block absolute top-8 right-0 z-10 text-black shadow-lg rounded-lg bg-white'>
+                   <div className='hidden group-hover:block absolute top-7 right-0 z-10 text-black shadow-lg rounded-lg bg-white'>
                     <ul className='list-none m-0 p-2 flex flex-col gap-2'>
                         <li className='py-1 px-2 cursor-pointer pr-10 text-sm  bg-yellow-50 rounded-md border '>Profile</li>
                         <li className='py-1 px-2 cursor-pointer pr-10 text-sm  bg-yellow-50 rounded-md border '>Logout</li>
@@ -35,17 +35,17 @@ const Dashboard = () => {
                 <div className='w-1/4 bg-white  min-h-screen border-r-2'>
                     <h1 className='text-xl font-semibold'>Dashboard</h1>
                     <ul className='flex flex-col items-start pt-5 text-gray-800'>
-                        <NavLink to={'/dashboard/add-jobs'} className={({isActive})=> `flex items-center p-3 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && 'bg-blue-100 border-r-4 border-blue-500'}`} >
-                            <MdOutlineLibraryAdd/>
-                            <li className='py-2 px-4 cursor-pointer '>Add Jobs</li>
+                        <NavLink to={'/dashboard/add-jobs'} className={({isActive})=> `flex items-center p-3 sm:px-6 gap-1 w-full hover:bg-gray-100 ${isActive && 'bg-blue-100 border-r-4 border-blue-500'}`} >
+                            <MdOutlineLibraryAdd className='text-3xl'/>
+                            <li className='py-2 px-4 cursor-pointer hidden sm:block'>Add Jobs</li>
                         </NavLink>
-                        <NavLink to={'/dashboard/manage-jobs'} className={({isActive})=> `flex items-center p-3 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && 'bg-blue-100 border-r-4 border-blue-500'}`}> 
-                           <MdOutlineManageHistory/>
-                            <li className='py-2 px-4 cursor-pointer '>Manage Jobs</li>
+                        <NavLink to={'/dashboard/manage-jobs'} className={({isActive})=> `flex items-center p-3 sm:px-6 gap-1 w-full hover:bg-gray-100 ${isActive && 'bg-blue-100 border-r-4 border-blue-500'}`}> 
+                           <MdOutlineManageHistory className='text-3xl'/>
+                            <li className='py-2 px-4 cursor-pointer hidden sm:block '>Manage Jobs</li>
                         </NavLink>
-                        <NavLink to={'/dashboard/view-applications'} className={({isActive})=> `flex items-center p-3 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && 'bg-blue-100 border-r-4 border-blue-500'}`}>
-                           <FaUsersViewfinder/>
-                            <li className='py-2 px-4 cursor-pointer '>View Applications</li>
+                        <NavLink to={'/dashboard/view-applications'} className={({isActive})=> `flex items-center p-3 sm:px-6 gap-1 w-full hover:bg-gray-100 ${isActive && 'bg-blue-100 border-r-4 border-blue-500'}`}>
+                           <FaUsersViewfinder className='text-3xl'/>
+                            <li className='py-2 px-4 cursor-pointer hidden sm:block '>View Applications</li>
                         </NavLink>
                     </ul>
                 </div>

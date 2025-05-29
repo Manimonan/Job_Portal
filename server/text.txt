@@ -1,0 +1,3 @@
+mongodb informations
+claster01 : username - manimohan2056
+            password - 1996mani01 

@@ -1,4 +1,5 @@
 import React,{useContext} from 'react'
+import {AppContext} from './Context/AppContext'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Application from './Pages/Application'
@@ -8,10 +9,10 @@ import AddJobs from './Pages/AddJobs'
 import ManageJobs from './Pages/ManageJobs'
 import ViewApplications from './Pages/ViewApplications'
 import Recruiterlogin from './Components/Recruiterlogin'
-import { AppContext } from './Context/AppContext'
+import 'quill/dist/quill.snow.css'
 
 function App() {
-  const {showRecruitersLogin} =  useContext(AppContext)
+  const {showRecruitersLogin} = useContext(AppContext)
   return (
     <div>
       
