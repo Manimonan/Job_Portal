@@ -4,6 +4,7 @@ import cors from 'cors';
 import 'dotenv/config'
 import connectDB from './config/db.js';
 import * as Sentry from "@sentry/node"
+import { clerkWebhooks } from './controllers/webhooks.js';
 
 // initialize express app
 const app = express();
@@ -20,7 +21,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to the server!');
 }
 );
-
+app.post('/webhooks',clerkWebhooks)
 
 
 
