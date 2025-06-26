@@ -4,7 +4,7 @@ import { assets } from '../assets/Assets'
 
 const JobCard = ({job}) => {
   return (
-    <div className='border p-6 shadow rounded'> 
+    <div className='border p-4 shadow rounded'> 
       <div className='flex flex-col justify-between '>
         <img className='h-15 w-15 m-0.5 bg-amber-100 rounded-2xl' src={job.company.logo} alt="" />
         <h4 className='font-medium text-xl mt-2'>{job.title}</h4>
