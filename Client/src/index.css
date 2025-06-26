@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+*{
+    font-family: Outfit, sans-serif;
+    box-sizing: border-box;
+}
+@layer base {
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+
+ .rich-text p { margin-bottom :16px;}
+    
+ .rich-text h2 { font-size: 20px;font-weight: bold; color: #444; margin-top: 1.5em; margin-bottom: 0.5em;}
+ .rice-text strong {font-weight:700; font-size:30px}
+ .rice-text ol { margin-left: 30px; list-style-type: decimal}
+ .rice-text ul {margin-left: 30px; list-style-type: disc}
+ .rice-text li {margin-bottom: 8px}
+   
